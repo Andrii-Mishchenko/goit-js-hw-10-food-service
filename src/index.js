@@ -1,6 +1,8 @@
 import menuItemsTpl from './templates/menu-items.hbs'
 import menu from './menu.json';
 
+
+// Вносим разметку по шаблону
 const menuContainer = document.querySelector('.js-menu');
 // const menuCardsMarkup = createMenuItemCards(menu);
 menuContainer.insertAdjacentHTML('beforeend', createMenuItemCards(menu));
@@ -9,6 +11,8 @@ function createMenuItemCards(menu) {
   return menuItemsTpl(menu);
 }
 
+
+// Создаем функционал для изменения темы
 const Theme = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
